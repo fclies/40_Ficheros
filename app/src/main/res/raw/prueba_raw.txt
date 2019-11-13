@@ -1,0 +1,2 @@
+Fichero raw.
+Creado en la carpeta res/raw del proyecto en Eclipse

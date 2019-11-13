@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">40_Ficheros</string>
+    <string name="sd_permission_available">Permiso a SD concedido</string>
+    <string name="sd_access_required">Se require permiso a SD</string>
+    <string name="sd_unavailable">No se dispone de permiso a SD</string>
+    <string name="sd_permission_denied">Permiso de acceso a SD denegado</string>
+</resources>

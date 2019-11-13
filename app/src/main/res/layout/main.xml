@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/EscribirMemBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Escribir en memoria"
+            android:onClick="escribirMemoria">
+        </Button>
+
+        <Button
+            android:id="@+id/LeerMemoriaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Leer de memoria"
+            android:onClick="leerMemoria">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/escribirSDBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Escribir en SD"
+            android:onClick="escribirSD">
+        </Button>
+
+        <Button
+            android:id="@+id/leerSDBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leer de SD"
+            android:onClick="leerSD">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leerDirBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Leer Directorios"
+            android:onClick="leerDirectorios">
+        </Button>
+
+        <Button
+            android:id="@+id/leerRawBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Leer Raw"
+            android:onClick="leerRaw">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tituloLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2dip"
+        android:text="Resultado de la operación"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/ResultadoLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:padding="5sp"
+            android:text="" />
+    </ScrollView>
+
+</LinearLayout>
